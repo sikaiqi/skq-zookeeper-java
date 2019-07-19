@@ -1,4 +1,4 @@
-package com.skq.zookeeper;
+package com.skq.zookeeper.version1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,13 +8,13 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ZkServerClient {
+public class SocketClient {
 
     private static List<String> listServer = new ArrayList<String>();
 
     public static void main(String[] args) {
         initServer();
-        ZkServerClient     client= new ZkServerClient();
+        SocketClient client= new SocketClient();
         BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             String name;
@@ -40,9 +40,11 @@ public class ZkServerClient {
     public static String getServer() {
         return listServer.get(0);
     }
+
+
     public void send(String name) {
 
-        String server = ZkServerClient.getServer();
+        String server = SocketClient.getServer();
         String[] cfg = server.split(":");
 
         Socket socket = null;
