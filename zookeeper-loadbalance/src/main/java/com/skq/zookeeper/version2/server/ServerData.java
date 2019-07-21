@@ -1,4 +1,4 @@
-package com.skq.zookeeper.version2;
+package com.skq.zookeeper.version2.server;
 
 
 import java.io.Serializable;

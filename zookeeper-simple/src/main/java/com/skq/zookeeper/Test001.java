@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 
 /**
-<<<<<<< HEAD
  * 主要是KeeperState.SyncConnected 中几种事件类型：
  * EventType.NodeCreated : 节点创建事件类型
  * EventType.NodeDeleted : 节点被删除
