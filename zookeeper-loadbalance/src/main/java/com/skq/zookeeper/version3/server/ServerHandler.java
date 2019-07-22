@@ -1,4 +1,4 @@
-package com.skq.zookeeper.version2.server;
+package com.skq.zookeeper.version3.server;
 
 /**
  * Created by Administrator on 2019/7/21 0021.
@@ -26,14 +26,14 @@ public class ServerHandler extends ChannelHandlerAdapter {
     }
 
     // 建立连接时增加负载
-    @Override
+//    @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         System.out.println("one client connect...");
         balanceUpdater.addBalance(BALANCE_STEP);
     }
 
     // 断开连接时减少负载
-    @Override
+//    @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         balanceUpdater.reduceBalance(BALANCE_STEP);
     }

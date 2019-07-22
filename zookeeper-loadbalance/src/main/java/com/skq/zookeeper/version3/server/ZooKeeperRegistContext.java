@@ -1,4 +1,4 @@
-package com.skq.zookeeper.version2.server;
+package com.skq.zookeeper.version3.server;
 
 import org.I0Itec.zkclient.ZkClient;
 
